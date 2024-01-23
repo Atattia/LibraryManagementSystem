@@ -118,4 +118,24 @@ Request Body:
 3. DELETE /borrowed_books/:id: Return a specific borrowed book.
 
 4. GET /borrowed_books/overdue: List overdue books.
-   
+
+## Schema
+This is a textual representation of the schematas for created databases.
+
+### Books Table
+id (PK),
+title,
+author,
+isbn,
+quantity,
+shelf_location
+
+
+### Borrowers Table
+id (PK),name,email,registered_date
+
+### BorrowedBooks Table
+id (PK),due_date,
+returned_date,
+borrower_id (Foreign Key -> Borrowers Table),
+book_id (Foreign Key -> Books Table)
