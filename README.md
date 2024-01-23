@@ -44,7 +44,7 @@ from there, the server will start on http://localhost:3000
 1. GET /books: List all books.
 
 2. POST /books: Add a new book.
-3. 
+   
 Request Body:
 ```
 {
@@ -56,16 +56,16 @@ Request Body:
 }
 ```
 
-5. PUT /books/:id: Update details of a specific book by ID.
+3. PUT /books/:id: Update details of a specific book by ID.
 Request Body:
 {
   "title": "Updated Book Title"
 }
 
 
-6. DELETE /books/:id: Delete a specific book by ID.
+4. DELETE /books/:id: Delete a specific book by ID.
 
-7. GET /books/search: Search for books by title, author, or ISBN.
+5. GET /books/search: Search for books by title, author, or ISBN.
 
 Query Parameters:
 title: Title of the book.
